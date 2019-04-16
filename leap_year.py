@@ -4,5 +4,13 @@
 
 # Don't forget to reach out for help after your own due diligence
 
-def is_leap_year(year):
-    return ''
+def is_leap(year):   
+    response = False
+    if year % 4 == 0:
+        response = True
+    if year % 100 == 0:
+        response = False
+    if year % 400 == 0:
+        response = True
+
+    return response
